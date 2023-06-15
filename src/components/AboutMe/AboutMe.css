@@ -1,0 +1,130 @@
+.about-me {
+  padding: 110px 70px 101px;
+}
+
+.about-me__title {
+  margin: 0 0 66px;
+  padding: 0 0 23px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  border-bottom: 1px solid #dadada;
+}
+
+.about-me__info-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.about-me__subtitle {
+  margin: 0 0 18px;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -0.04em;
+}
+
+.about-me__direction {
+  margin: 0 0 26px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.about-me__description {
+  margin: 0;
+  max-width: 600px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.about-me__link {
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.about-me__photo {
+  max-width: 270px;
+  aspect-ratio: 1/1.211;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1279px) {
+  .about-me {
+    padding: 90px 50px;
+  }
+
+  .about-me__subtitle {
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .about-me__direction {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__description {
+    max-width: 364px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-me__photo {
+    max-width: 255px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me {
+    padding: 198px 14px 70px;
+  }
+
+  .about-me__title {
+    margin-bottom: 60px;
+    padding-bottom: 28px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-me__info-box {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-me__subtitle {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about-me__direction {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .about-me__description {
+    margin-bottom: 40px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .about-me__link {
+    position: relative;
+  }
+
+  .about-me__photo {
+    max-width: 292px;
+    max-height: 352px;
+  }
+}

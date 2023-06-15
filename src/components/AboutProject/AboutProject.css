@@ -1,0 +1,150 @@
+.about-project {
+  padding: 110px 70px;
+}
+
+.about-project__title {
+  margin: 0;
+  padding: 0 0 21px 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  border-bottom: 1px solid #dadada;
+}
+
+.about-project__fact-list {
+  margin: 70px 0 110px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  list-style: none;
+}
+
+.about-project__fact-title {
+  margin: 0 0 26px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+}
+
+.about-project__fact-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.about-project__time-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  text-align: center;
+}
+
+.about-project__time-backend {
+  margin: 0 0 14px;
+  padding: 9px 0;
+  background-color: #3ddc84;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+
+.about-project__time-frotend {
+  margin: 0 0 14px;
+  padding: 9px 0;
+  background-color: #303030;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.about-project__time-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8b8b8b;
+}
+
+@media screen and (max-width: 1279px) {
+  .about-project {
+    padding: 90px 50px;
+  }
+
+  .about-project__title {
+    padding-bottom: 22px;
+  }
+
+  .about-project__fact-title {
+    margin-bottom: 22px;
+  }
+
+  .about-project__fact-list {
+    margin-bottom: 93px;
+    gap: 30px;
+  }
+
+  .about-project__fact-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-project {
+    padding: 70px 18px;
+  }
+
+  .about-project__title {
+    padding-bottom: 28px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-project__fact-list {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .about-project__fact-title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about-project__fact-description {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .about-project__time-list {
+    grid-template-columns: 35% 65%;
+  }
+
+  .about-project__time-backend {
+    margin-bottom: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  
+  .about-project__time-frotend {
+    margin-bottom: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .about-project__time-name {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
