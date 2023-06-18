@@ -18,6 +18,10 @@
 
 .movie-card__name {
   margin: 7px 0 0;
+  max-width: 290px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
@@ -41,7 +45,7 @@
 
 .movie-card__like_type_delete {
   background-image: url(../../images/close.svg);
-  background-size: 7px 7px;
+  background-size: 12px 12px;
 }
 
 .movie-card__duration {
@@ -61,6 +65,7 @@
 
   .movie-card__name {
     margin-top: 5px;
+    max-width: 260px;
   }
 
   .movie-card__duration {
@@ -79,6 +84,7 @@
 
   .movie-card__name {
     margin-top: 7px;
+    max-width: 240px;
     font-size: 12px;
     line-height: 15px;
   }

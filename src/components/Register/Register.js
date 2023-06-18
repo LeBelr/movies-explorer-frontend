@@ -38,7 +38,7 @@ export default function Register() {
   return (
     <section className="register">
       <Link to="/" className="register__logo" />
-      <h2 className="register__title">Добро пожаловать!</h2>
+      <h1 className="register__title">Добро пожаловать!</h1>
       <form className="register__form">
         <fieldset className="register__input-box">
           <label className="register__label" htmlFor="name">Имя</label>

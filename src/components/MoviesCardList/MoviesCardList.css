@@ -1,5 +1,12 @@
 .movies-cards {
   padding: 70px 70px 80px;
+  margin: 0 auto;
+  max-width: 1280px;
+  box-sizing: border-box;
+}
+
+.movies-cards_type_saved {
+  padding-bottom: 187px;
 }
 
 .movies-cards__list {
@@ -30,6 +37,10 @@
     padding-right: 30px;
   }
 
+  .movies-cards_type_saved {
+    padding-bottom: 90px;
+  }
+  
   .movies-cards__list {
     margin-bottom: 80px;
     grid-template-columns: repeat(2, 1fr);

@@ -36,7 +36,7 @@ export default function Login() {
   return (
     <section className="login">
       <Link to="/" className="login__logo" />
-      <h2 className="login__title">Рады видеть!</h2>
+      <h1 className="login__title">Рады видеть!</h1>
       <form className="login__form">
         <fieldset className="login__input-box">
           <label className="login__label" htmlFor="email">E-mail</label>

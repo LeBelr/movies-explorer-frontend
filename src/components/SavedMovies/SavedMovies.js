@@ -7,8 +7,10 @@ export default function SavedMovies() {
   return (
     <>
       <Header />
-      <SearchForm />
-      <MoviesCardList isSavedMovie={true} />
+      <main>
+        <SearchForm />
+        <MoviesCardList isSavedMovie={true} />
+      </main>
       <Footer />
     </>
   )

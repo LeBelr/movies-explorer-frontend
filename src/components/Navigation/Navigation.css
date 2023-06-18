@@ -1,6 +1,9 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+  box-sizing: border-box;
 }
 
 .navigation__logo {
