@@ -18,6 +18,11 @@
   gap: 37px 24px;
 }
 
+.movies-cards__empty {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .movies-cards__button {
   padding: 10px 0;
   border: none;

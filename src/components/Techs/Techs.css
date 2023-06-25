@@ -42,7 +42,7 @@
   gap: 10px;
 }
 
-.techs_technology {
+.techs__technology {
   width: 90px;
   padding: 21px 0 21px;
   background-color: #303030;
@@ -77,7 +77,7 @@
     padding-right: 10px;
   }
 
-  .techs_technology {
+  .techs__technology {
     width: 84px;
     font-size: 12px;
     line-height: 15px;
@@ -118,7 +118,7 @@
     justify-content: start;
   }
 
-  .techs_technology {
+  .techs__technology {
     font-size: 12px;
     line-height: 15px;
   }

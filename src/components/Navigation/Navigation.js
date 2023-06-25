@@ -17,7 +17,7 @@ export default function Navigation({ loggedIn }) {
 
   return (
     <>
-      {loggedIn ? (
+      {!loggedIn ? (
         <nav className="navigation">
           <Link to="/" className="navigation__logo" />
           <div className="navigation__link-box">
