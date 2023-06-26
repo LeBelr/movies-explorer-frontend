@@ -7,7 +7,3 @@
 ## Ссылки на проект
 
 https://mvs.nomoredomains.rocks
-
-## Ссылка на пул реквест 
-
-https://github.com/LeBelr/movies-explorer-frontend/pull/2
