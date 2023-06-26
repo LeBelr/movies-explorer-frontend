@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { Routes, Route, useNavigate, useLocation, Navigate } from 'react-router-dom';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 import './App.css';
 import Main from '../Main/Main';
@@ -208,7 +208,7 @@ function App() {
       setAllMovies(JSON.parse(localStorage.getItem('allMovies')));
     }
     if (localStorage.getItem('foundMovies')) {
-      setMovies(JSON.parse(localStorage.getItem('foundMovies')));
+      handleCountMovie();
     }
   }, [])
 
@@ -266,8 +266,8 @@ function App() {
               isOk={isOk}
             />}
           />
-          <Route path="/signup" element={<Register handleRegister={handleRegister} />} />
-          <Route path="/signin" element={<Login handleLogin={handleLogin} />} />
+          <Route path="/signup" element={loggedIn ? <Navigate to="/" replace /> : <Register handleRegister={handleRegister} />} />
+          <Route path="/signin" element={loggedIn ? <Navigate to="/" replace /> : <Login handleLogin={handleLogin} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

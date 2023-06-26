@@ -14,8 +14,12 @@ export default function SavedMovies({ movies, loggedIn, isSaved, handleDeleteMov
   }
 
   useEffect(() => {
-    setFilterMovies(movies)
+    setFilterMovies(filterMovies.filter(filterMovies => movies.some(movie => movie.movieId === filterMovies.movieId)));
   }, [movies])
+
+  useEffect(() => {
+    setFilterMovies(movies)
+  }, [])
 
   return (
     <>

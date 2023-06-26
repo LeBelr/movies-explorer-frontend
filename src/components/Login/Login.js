@@ -48,7 +48,7 @@ export default function Login({ handleLogin }) {
       <form className="login__form" onSubmit={handleSubmit}>
         <fieldset className="login__input-box">
           <label className="login__label" htmlFor="email">E-mail</label>
-          <input className={`login__input ${isValid.email ? "" : "login__input_type_error"}`} id="email" type="email" name="email" placeholder="E-mail" value={values.email} onChange={handleChange} required></input>
+          <input className={`login__input ${isValid.email ? "" : "login__input_type_error"}`} id="email" name="email" placeholder="E-mail" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" value={values.email} onChange={handleChange} required></input>
           <span className={`login__input-error ${isValid.email ? "" : "login__input-error_active"}`}>{errors.email}</span>
         </fieldset>
         <fieldset className="login__input-box">

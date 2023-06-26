@@ -57,7 +57,7 @@ export default function Register({ handleRegister }) {
         </fieldset>
         <fieldset className="register__input-box">
           <label className="register__label" htmlFor="email">E-mail</label>
-          <input className={`register__input ${isValid.email ? "" : "register__input_type_error"}`} id="email" type="email" name="email" placeholder="E-mail" value={values.email} onChange={handleChange} required></input>
+          <input className={`register__input ${isValid.email ? "" : "register__input_type_error"}`} id="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" placeholder="E-mail" value={values.email} onChange={handleChange} required></input>
           <span className={`register__input-error ${isValid.email ? "" : ("register__input-error_active")}`}>{errors.email}</span>
         </fieldset>
         <fieldset className="register__input-box">
