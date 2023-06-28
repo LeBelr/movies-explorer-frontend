@@ -23,7 +23,6 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isOk, setIsOk] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(document.documentElement.clientWidth);
   const foundMovies = JSON.parse(localStorage.getItem('foundMovies'));
 
   const navigate = useNavigate();
@@ -32,6 +31,8 @@ function App() {
   // Функция для установки количества фильмов в Movies
   function handleCountMovie() {
     const foundMovies = JSON.parse(localStorage.getItem('foundMovies'));
+    const windowWidth = document.documentElement.clientWidth;
+
     if (windowWidth >= 1280) {
       setMovies(foundMovies.slice(0, 12));
       setMoreMovies(3);
@@ -46,6 +47,7 @@ function App() {
     }
     if (!foundMovies) {
       setMoreMovies(0);
+      return
     }
   }
 
@@ -213,7 +215,9 @@ function App() {
   }, [])
 
   window.addEventListener('resize', () => {
-    setWindowWidth(document.documentElement.clientWidth);
+    setTimeout(() => {
+      handleCountMovie();
+    }, 200)
   })
 
   useEffect(() => {
