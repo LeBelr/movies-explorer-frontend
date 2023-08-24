@@ -7,10 +7,10 @@ import AboutMe from '../AboutMe/AboutMe';
 import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../Footer/Footer';
 
-export default function Main() {
+export default function Main({ loggedIn }) {
   return (
     <>
-      <Header isMain={true} />
+      <Header isMain={true} loggedIn={loggedIn} />
       <main>
         <Promo />
         <NavTab />

@@ -19,10 +19,12 @@
 }
 
 .not-found__link {
+  border: none;
   font-size: 14px;
   line-height: 17px;
   color: #4285f4;
   text-decoration: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1279px) {

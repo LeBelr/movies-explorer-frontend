@@ -22,6 +22,7 @@
 .profile__input-box {
   margin: 0 0 17px;
   padding: 0 0 16px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #424242;
@@ -30,7 +31,6 @@
 .profile__input-box:last-of-type {
   border: none;
   margin-bottom: 220px;
-  padding-bottom: 0;
 }
 
 .profile__input-label {
@@ -55,6 +55,20 @@
   border-radius: 5px;
 }
 
+.profile__input-error {
+  display: none;
+  position: absolute;
+  bottom: -12px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ee3465;
+}
+
+.profile__input-error_active {
+  display: block;
+}
+
 .profile__button {
   border: none;
   display: block;
@@ -66,9 +80,22 @@
   background-color: transparent;
 }
 
+.profile__button:disabled {
+  color: #424242;
+}
+
 .profile__button:last-of-type {
   margin-bottom: 0;
   color: #ee3465;
+}
+
+.profile__resolve {
+  display: block;
+  margin: 0 auto 16px;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #4285f4;
 }
 
 @media screen and (max-width: 1279px) {
